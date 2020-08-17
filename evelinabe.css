@@ -8,6 +8,6 @@ nav {
   width: 100%;
   z-index: 999;
 
-.home-link {
+nav .home-link {
   font-family: 'Libre Barcode 39 Text', cursive:
 }
