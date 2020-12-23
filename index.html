@@ -1,20 +1,681 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="evelinabe.github.io/evelinabe.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Handlee&family=Libre+Barcode+39+Text=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Evelina Berg - frontend-developer in the making</title>
- </head>
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evelina Berg</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./sr-only.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Nunito:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
 <body>
-    <nav>
-        <a class="link-home" href="/">Evelina Berg</a>
-    
-    <header>
-        <h1 class="main-title">Evelina Berg</h1>
-        <h3 class="main-undertitle">Frontend-developer in the making</h3>
-    </header>
-    
-    
- </body>
+  <header class="header__wrapper">
+
+    <!-- Social media menu-->
+    <nav class="social-menu__wrapper">
+      <ul class="social-menu__list">
+        <li class="social-menu__item">
+          <a href="https://www.linkedin.com/in/evelina-berg/" class="social-menu__link">
+            <img src="./assets/icons/linkedin-white.svg" alt="Linkedin icon" class="social-menu__icon" />
+          </a>
+        </li>
+        <li class="social-menu__item">
+          <a href="https://github.com/evelinabe" class="social-menu__link">
+            <img src="./assets/icons/github-white.svg" alt="Github icon" class="social-menu__icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header title textbox-->
+    <div class="header__textbox">
+      <p class="header__paragraph">Portfolio:</p>
+      <p class="header__paragraph header__paragraph--bold">Evelina Berg</p>
+      <h1 class="header__title">Frontend developer</h1>
+      <h2 class="header__subtitle">+ Structural Wonderkin</h3>
+    </div>
+
+    <!-- Self-portrait-->
+    <picture>
+      <source srcset="./assets/images/evelina-berg-portrait.jpeg" type="image/jpeg" />
+      <img src="./assets/images/evelina-berg-portrait.webp" alt="Portrait of Evelina Berg"
+        class="header__portrait-image" />
+    </picture>
+  </header>
+  <main>
+
+    <!-- Intro section -->
+    <section class="section__wrapper grey">
+        <h2 class="sr-only">About me:</h2>
+        <p class="info__text">
+          <span class="stroke"></span><span class="circle"></span>
+          Hello! I'm a frontend developer with a background as a
+          public official. One day, I decided enough was enough. Life's too
+          short not to wake up in the mornings and feel excited about
+          the day ahead. Coding has lit a spark in me I had almost forgot I had. 
+          Now, let's get these days going!
+        </p>
+    </section>
+
+    <!-- Tech section -->
+    <section class="section__wrapper">
+      <h2 class="section__header section__header--red-background">
+        Tech
+      </h2>
+      <p class="info__text">
+        HTML5, CSS3, Flexbox, JavaScript, ES6, React, JSX,
+        Redux, Node.js, Router, APIs, Styled components, Wordpress,
+        Web Accessibility, SEO, Mob-programming, Pair-programming,
+        GitHub, Command Line.
+      </p>
+    </section>
+
+    <!-- Featured projects section -->
+    <section class="section__wrapper--to-grid featured grey">
+      <h2 class="section__header section__header--red-background">
+        Featured projects
+      </h2>
+      <article class="featured-projects__wrapper">
+
+        <!-- Featured 1 -->
+        <a 
+          href="https://github.com/evelinabe/todo-app-technigo-15.20" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="featured-project__wrapper"
+        >
+          <span class="sr-only">Todo app repository</span>
+          <div class="featured-project__image-wrapper">
+            <h3 class="featured-project__title">
+              Redux/React/Routes
+            </h3>
+            <picture class="featured-project__overlay">
+              <source 
+                srcset="./assets/images/projects/notes-todo-app-sizes/notes-todo-app-w-809.png"
+                media="(min-width: 767px)"
+              />
+              <source 
+                srcset="./assets/images/projects/notes-todo-app-sizes/notes-todo-app-w-1181.png"
+                media="(min-width: 1098px)" 
+              />
+              <img 
+                src="./assets/images/projects/notes-todo-app-sizes/notes-todo-app-w-500.png" 
+                alt="Todo app image"
+                class="project__image"
+              />
+            </picture>
+          </div>
+          <div class="project__textbox">
+            <p class="project__text">
+              <span class="project__title">
+                Todo App.
+              </span>
+              Multi page web app built in Redux and React using routes and local storage.
+              <span class="project__arrows"> >> </span>
+            </p>
+            <div class="codeboxes">
+              <p>REDUX</p>
+              <p>REACT</p>
+              <p>JSX</p>
+              <p>ROUTES</p>
+              <p>STYLED COMPONENTS</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Featured 2 -->
+        <a 
+          href="https://github.com/evelinabe/happy-thoughts-technigo-11.20" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="featured-project__wrapper"
+        >
+          <span class="sr-only">Happy thoughts app repository</span>
+          <div class="featured-project__image-wrapper">
+            <h3 class="featured-project__title">API/ROUTES</h3>
+            <picture class="featured-project__overlay">                
+              <source 
+              srcset="./assets/images/projects/happy-thoughts-app-sizes/happy-thoughts-app-w-809.png"
+              media="(min-width: 767px)"
+              />
+              <source 
+                srcset="./assets/images/projects/happy-thoughts-app-sizes/happy-thoughts-app-w-1181.png"
+                media="(min-width: 1098px)" 
+              />
+              <img 
+                src="./assets/images/projects/happy-thoughts-app-sizes/happy-thoughts-app-w-500.png"
+                alt="Happy thoughts app image" 
+                class="project__image" 
+              />
+            </picture>
+          </div>
+          <div class="project__textbox">
+            <p class="project__text">
+              <span class="project__title">
+                Happy thoughts app.
+              </span>
+              Web app built in React. Send your happy thoughts, like others.
+              <span class="project__arrows"> >> </span>
+            </p>
+          </div>
+          <div class="codeboxes">
+            <p>REACT</p>
+            <p>CSS3</p>
+            <p>API</p>
+            <p>GET/POST</p>
+            <p>JavaScript</p>
+            <p>Count</p>
+          </div>
+        </a>
+
+        <!-- Featured 3 -->
+        <a 
+          href="https://github.com/evelinabe/popular-tv-shows-Technigo-12.20" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="featured-project__wrapper"
+        >
+          <span class="sr-only">Popular tv-shows</span>
+          <div class="featured-project__image-wrapper">
+            <h3 class="featured-project__title">API/ROUTES</h3>
+            <picture class="featured-project__overlay">
+              <source 
+                srcset="./assets/images/projects/popular-tv-shows-sizes/popular-tv-shows-w-809.png"
+                media="(min-width: 767px)"
+              />
+              <source 
+                srcset="./assets/images/projects/popular-tv-shows-sizes/popular-tv-shows-w-1181.png"
+                media="(min-width: 1098px)" 
+              />
+              <img 
+                src="./assets/images/projects/popular-tv-shows-sizes/popular-tv-shows-w-500.png"
+                alt="Popular tv-shows image" 
+                class="project__image" 
+              />
+            </picture>
+          </div>
+          <div class="project__textbox">
+            <p class="project__text">
+              <span class="project__title">
+                TV-shows
+              </span>
+              Multi-page app showcasing popular tv-shows and information about each item. Built in React
+              <span class="project__arrows"> >> </span>
+            </p>
+          </div>
+          <div class="codeboxes">
+            <p>REACT</p>
+            <p>JSX</p>
+            <p>CSS3</p>
+          </div>
+        </a>
+
+        <!-- Featured 4 -->
+        <a 
+          href="https://github.com/evelinabe/gothenburg-weather-app-technigo-6.20" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          class="featured-project__wrapper"
+        >
+          <span class="sr-only">Open weather app repository</span>
+          <div class="featured-project__image-wrapper">
+            <h3 class="featured-project__title">API<h3>
+            <picture class="featured-project__overlay">
+              <source
+                srcset="./assets/images/projects/gothenburg-weather-app-sizes/gothenburg-weather-app-w-500.png"
+                media="(min-width: 767px)" 
+              />
+              <img 
+                src="./assets/images/projects/gothenburg-weather-app-sizes/gothenburg-weather-app-w-200.png"
+                alt="Weather app image" 
+                class="project__image" 
+              />
+            </picture>
+          </div>  
+          <div class="project__textbox">
+            <p class="project__text">
+              <span class="project__title">
+                Gothenburg Weather App.
+              </span>
+              Web app built in JavaScript using open weather API
+              <span class="project__arrows"> >> </span>
+            </p>
+          </div>
+          <div class="codeboxes">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>API</p>
+            <p>JavaScript</p>
+            <p>ES6</p>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Other projects section-->
+    <section class="section__wrapper grey padding--small">
+      <h2 class="section__header section__header--red-text">Other projects</h2>
+
+      <!-- Other project 1 -->
+      <a 
+        href="https://www.torslandalocals.se/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open Torslanda locals repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Torslanda locals.
+          </span>
+          Web page built for local companies in a part of Gothenburg.
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>REACT</p>
+          <p>CSS3</p>
+          <p>API</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <!-- Other project 2 -->
+      <a 
+        href="https://github.com/evelinabe/labyrinth-technigo-16.20" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open labyrinth game repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Labyrinth game.
+          </span>
+          Labyrinth game built with React and Redux in a pair-programming project
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>REACT</p>
+          <p>REDUX</p>
+          <p>UI-Components</p>
+          <p>Styled-components</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <!-- Other project 3 -->
+      <!-- <a 
+        href="#" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <p class="project__text">
+          <span class="project__title">
+            Popular TV-show App.
+          </span>
+          Web app built in React using open API for movies and TV-shows
+          <a 
+             class="project__arrows">
+            >>
+            <span class="sr-only">Open popular tv-show app repository </span>
+          </a>
+        </p>
+        <div class="codeboxes">
+          <p>REACT</p>
+          <p>CSS3</p>
+          <p>API</p>
+          <p>JavaScript</p>
+        </div>
+      </a>   -->
+
+      <!-- Other project 4 -->
+      <a 
+        href="https://github.com/evelinabe/cluedo-technigo-5.20" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open Cluedo card game repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Cluedo Card Game.
+          </span>
+          Small web app built in Vanilla JS.
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <!-- Other project 5 -->
+      <a 
+        href="https://github.com/evelinabe/new-music-technigo-9.20" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open Music releases repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Latest music releases with React.
+          </span>
+          Fully responsive multi-page app based on data from the Spotify API. Pair-programming
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>REACT</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+          <p>ROUTES</p>
+          <p>Pair-programming</p>
+        </div>
+      </a>
+
+      <!-- Other project 6 -->
+      <a 
+        href="https://github.com/evelinabe/react-survey-technigo-10.24" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open React survey repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            React survey
+          </span>
+          Survey in React including a summary
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>REACT</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <!-- Other project 7 -->
+      <a 
+        href="https://github.com/evelinabe/project-Oscar-Wilde-Random-Quotes-App-Technigo-13.20" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open React Native quote machine repository</span>
+        <p class="pproject__textbox--text">
+          <span class="project__title">
+            Mobile Oscar Wilde quote machine
+          </span>
+          React Native app which allows the user to generate Oscar Wilde quotes from an API
+          <span  class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>REACT NATIVE</p>
+          <p>Styled components</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+      <!-- Other project 8 -->
+      <a 
+        href="https://github.com/evelinabe/project-food-turtles-3" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open Food review repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Food review website
+          </span>
+          Fully responsive food review website using the Zomato API
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>HTML5</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>Mob-programming</p>
+        </div>
+      </a>
+
+      <!-- Other project 9 -->
+      <a 
+        href="https://github.com/evelinabe/malteform-signup-technigo-3.20" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="project__wrapper"
+      >            
+        <span class="sr-only">Open responsive business page repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Responsive business page
+          </span>
+          Fully responsive business one-pager with hero video, form and accordion Q & A app
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+        </div>
+      </a>
+
+
+      <!-- Other project 10 -->
+      <a 
+        href="https://github.com/evelinabe/making-zine-technigo-2.20"
+        rel="noopener noreferrer" 
+        target="_blank"
+        class="project__wrapper"
+      >
+        <span class="sr-only">Open magazine page repository</span>
+        <p class="project__text">
+          <span class="project__title">
+            Magazine page
+          </span>
+          Responsive magazine one-pager with parallax scroll image
+          <span class="project__arrows"> >> </span>
+        </p>
+        <div class="codeboxes">
+          <p>HTML5</p>
+          <p>CSS</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="section__wrapper--to-grid">
+      <h2 class="section__header section__header--red-background medium--hidden">My thoughts</h2>
+      <h2 class="section__header section__header--red-background small--hidden">My thougths on code</h2>
+
+      <!-- Main articles-->
+      <article class="featured-articles__wrapper">
+        <div class="featured-article__wrapper">
+          <a href="https://evelinaberg.medium.com/the-beginning-is-not-so-restful-a-first-go-on-building-an-api-5b55f5e6470f"
+            rel="noopener noreferrer">
+            <span class="sr-only">Article on Medium</span>
+            <div class="article__image_wrapper">
+              <img src="./assets/images/articles/tobias-fischer-PkbZahEG2Ng-unsplash.jpg" alt="API article image"
+                class="project__image" />
+            </div>
+          </a>
+          <div class="article__image--text">
+            <span>
+              Photo by
+              <a href="https://unsplash.com/@tofi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank">
+                Tobias Fischer
+              </a>
+              on
+              <a href="https://unsplash.com/s/photos/database?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank">
+                Unsplash
+              </a>
+            </span>
+            <div class="featured-article__textbox">
+              <p>
+                <span class="article__text--red">Dec 2020</span>
+              </p>
+              <p class="article__text--bold">
+                The beginning is not so restful - a first go on building an API
+              </p>
+              <p class="article__text">
+                I’ve used API’s for a few frontend projects now,
+                like the Open Weather Map API for my weather app and an API
+                to get and post happy thoughts. In the 24 weeks-Bootcamp I’m
+                attending at Technigo we’re now moving on to building RESTful
+                API’s
+                <a href="https://evelinaberg.medium.com/the-beginning-is-not-so-restful-a-first-go-on-building-an-api-5b55f5e6470f"
+                  rel="noopener noreferrer" class="article__arrows">
+                  >>
+                  <span class="sr-only">Open article on Medium</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-article__wrapper small--hidden">
+          <a href="https://evelinaberg.medium.com/so-i-find-myself-here-2d0bb67e7268" rel="noopener noreferrer"
+            >
+            <span class="sr-only">Article on Medium</span>
+            <div class="article__image_wrapper">
+              <img src="./assets/images/articles/garrett-sears-T57t6ZUT2Kc-unsplash 2.jpg" alt="API article image"
+                class="project__image" />
+            </div>
+          </a>
+          <div class="article__image--text">
+            <span>
+              Photo by
+              <a href="https://unsplash.com/@garrettsears?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank">
+                Garrett Sears
+              </a>
+              on
+              <a href="https://unsplash.com/s/photos/find?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
+                target="_blank">
+                Unsplash
+              </a>
+            </span>
+            <div class="featured-article__textbox">
+              <p>
+                <span class="article__text--red">Dec 2020</span>
+              </p>
+              </p>
+              <p class="article__text--bold">
+                So, I find myself here.
+              </p>
+              <p class="article__text">
+                In the middle of tech. In the beginning of
+                <a href="https://evelinaberg.medium.com/so-i-find-myself-here-2d0bb67e7268" rel="noopener noreferrer"
+                 class="article__arrows">
+                  >>
+                  <span class="sr-only">Open article on Medium</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- More thoughts section -->
+    <section class="section__wrapper hidden">
+      <h2 class=" section__header section__header--red-text">More thoughts</h2>
+      <a href="https://evelinaberg.medium.com/so-i-find-myself-here-2d0bb67e7268" rel="noopener noreferrer"
+        class="article__wrapper">
+        <p class="article__text article__text--bold">
+          <span class="article__text--red">Dec 2020</span>
+          So, I find myself here. In the middle
+          <span class="article__arrows">
+            >>
+            <span class="sr-only">Open article on Medium</span>
+          </span>
+        </p>
+      </a>
+      </article>
+    </section>
+
+    <!-- Skills section -->
+    <section class="section__wrapper grey">
+      <h2 class="section__header section__header--red-background">Skills</h2>
+      <div class="skills__wrapper">
+        <div class="skills__textbox">
+          <p class="skills__text--red">Code</p>
+          <p class="skills__text">HTML5</p>
+          <p class="skills__text">CSS3</p>
+          <p class="skills__text">JavaScript ES6</p>
+          <p class="skills__text">React</p>
+          <p class="skills__text">GitHub</p>
+          <p class="skills__text">Node.js</p>
+          <p class="skills__text">REDUX</p>
+        </div>
+        <div class="skills__textbox">
+          <p class="skills__text--red">Toolbox</p>
+          <p class="skills__text">Postman</p>
+          <p class="skills__text">Microsoft Excel</p>
+          <p class="skills__text">Keynote</p>
+          <p class="skills__text">Slack</p>
+          <p class="skills__text">Netlify</p>
+          <p class="skills__text">Heroku</p>
+          <p class="skills__text">MongoDB</p>
+          <p class="skills__text">Bootstrap</p>
+        </div>
+        <div class="skills__textbox">
+          <p class="skills__text--red">Upcoming</p>
+          <p class="skills__text">SASS</p>
+        </div>
+        <div class="skills__textbox">
+          <p class="skills__text--red">More</p>
+          <p class="skills__text">Strategy</p>
+          <p class="skills__text">Development</p>
+          <p class="skills__text">Agile methodology</p>
+          <p class="skills__text">Toolbox</p>
+          <p class="skills__text">Accessibility</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- For More section -->
+    <section class="section__wrapper more">
+      <h2 class="section__header section__header--red-background">For more</h2>
+      <div class="more__wrapper">
+        <a href="https://www.linkedin.com/in/evelina-berg/" class="more__link">
+          <div class="more__icon-wrapper">
+            <img src="./assets/icons/linkedin-red.svg" alt="Linkedin icon" class="more__icon" />
+          </div>
+          <p class="more__text">Linkedin</p>
+        </a>
+        <a href="https://github.com/evelinabe" class="more__link">
+          <div class="more__icon-wrapper">
+            <img src="./assets/icons/github-red.svg" alt="GitHub icon" class="more__icon" />
+          </div>
+          <p class="more__text">GitHub</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer__wrapper section__wrapper">
+    <h2 class="section__header">Contact</h2>
+    <article class="footer__textbox">
+      <p class="footer__text footer__text--bold">Evelina Berg</p>
+      <p class="footer__text">+46 70 830 09 70</p>
+      <a href="mailto:evelina.berg@outlook.com" class="footer__text">
+        Mejla mig
+      </a>
+    </article>
+  </footer>
+</body>
+
+</html>
