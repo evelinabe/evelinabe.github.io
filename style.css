@@ -217,7 +217,7 @@ a:hover {
   justify-content: center;
 }
 
-.project__image {
+.image {
   width: 100%;
 }
 
@@ -305,13 +305,6 @@ a:hover {
 
 .small--hidden {
   display: none;
-}
-
-.article__image_wrapper {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .article__image--text > span {
@@ -533,6 +526,10 @@ a:hover {
     font-size: 16px;
   }
 
+  .image {
+    height: 149px;
+  }
+
   .project__text,
   .project__title {
     padding: 8px 0;
@@ -671,7 +668,7 @@ a:hover {
     font-size: 20px;
   }
 
-  .project__image {
+  .image {
     height: 212px;
   }
 
@@ -778,7 +775,7 @@ a:hover {
     width: 50vw;
   }
 
-  .project__image {
+  .image {
     height: 300px;
   }
 
