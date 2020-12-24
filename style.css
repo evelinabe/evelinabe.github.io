@@ -423,10 +423,6 @@ a:hover {
 /* Footer styling */
 .footer__wrapper {
   background-color: #072bce;
-  color: #fff;
-}
-
-.footer__textbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -442,6 +438,10 @@ a:hover {
 
 .footer__text--bold {
   font-weight: 700;
+}
+
+.footer a {
+  color: #fff;
 }
 
 @media screen and (min-width: 767px) {
