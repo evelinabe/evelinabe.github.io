@@ -256,23 +256,35 @@ a:hover {
   padding-top: 15px;
 }
 
+.list {
+  align-items: flex-start;
+}
+
+.list__header {
+  align-self: center;
+}
+
 .projects__wrapper {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-self: flex-start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 }
 
 .project__wrapper {
-  max-width: 50vw;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .project__title {
   color: #ff0000;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.project__text {
+  width: 100%;
 }
 
 .project__arrows {
@@ -283,13 +295,13 @@ a:hover {
 }
 
 .codeboxes {
-  margin-top: 10px;
+  margin: 10px 0 20px;
   display: flex;
   flex-wrap: wrap;  
 }
 
 .codeboxes p {
- padding: 6px 10px 5px 10px;
+  padding: 6px 10px 5px 10px;
   margin: 8px 5px 0 0;
   background-color: #fddfe7;
   color: #000;
@@ -299,9 +311,6 @@ a:hover {
 }
 
 /* Article section styling */
-.featured-article__wrapper {
-  max-width: 50vw;
-}
 
 .small--hidden {
   display: none;
@@ -317,10 +326,13 @@ a:hover {
 }
 
 .article__wrapper {
-  width: 50vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.article__image {
+  max-height: 288px;
 }
 
 .article__text {
@@ -542,7 +554,7 @@ a:hover {
     justify-content: flex-start;
     flex-wrap: wrap;
   }
-  
+
   .codeboxes p {
     font-size: 13px;
   }
@@ -564,6 +576,10 @@ a:hover {
     row-gap: 30px;
   }
 
+  .featured-article__wrapper {
+    max-width: 50vw;
+  }
+  
   .skills__textbox {
     width: 33%;
   }
