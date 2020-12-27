@@ -252,7 +252,7 @@ a:hover {
 }
 
 /* Other projects section */
-.padding-small {
+.padding--small {
   padding-top: 15px;
 }
 
@@ -516,11 +516,11 @@ a:hover {
   }
 
   .info__text{
-    max-width: 50vw;
+    max-width: 55vw;
   }
 
   .section__header {
-    max-width: 50vw;
+    max-width: 55vw;
     margin-bottom: 30px;
     font-size: 24px;
   }
@@ -546,6 +546,10 @@ a:hover {
     height: 149px;
   }
 
+  .list {
+    align-items: center;
+  }
+
   .project__text,
   .project__title {
     padding: 8px 0;
@@ -553,9 +557,9 @@ a:hover {
   }
 
   .project__wrapper {
-    max-width: 50vw;
+    max-width: 55vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
@@ -581,7 +585,7 @@ a:hover {
   }
 
   .featured-article__wrapper {
-    max-width: 50vw;
+    max-width: 25vw;
   }
   
   .skills__textbox {
