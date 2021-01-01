@@ -448,6 +448,10 @@ a:hover {
   color: #fff;
 }
 
+.hidden {
+  display: none
+}
+
 @media screen and (min-width: 767px) {
   h4,
   p {
@@ -851,4 +855,5 @@ a:hover {
   .footer__text {
     font-size: 30px;
   }
+
 }
