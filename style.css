@@ -455,7 +455,7 @@ a:hover {
   }
 
   .header__wrapper {
-    height: 480px;
+    height: 370px;
     background-image: linear-gradient(
         -45deg,
         rgba(255, 255, 255, 0.644) 0%,
@@ -466,17 +466,17 @@ a:hover {
   }
 
   .social-menu__wrapper {
-    height: 146px;
+    height: 90px;
   }
 
   .social-menu__list {
-    margin-left: 63vw;
+    margin-left: 67vw;
     justify-content: flex-start;
   }
 
   .social-menu__link {
-    height: 62px;
-    width: 62px;
+    height: 50px;
+    width: 50px;
     margin: 12px;
   }
 
@@ -510,7 +510,7 @@ a:hover {
   .header__portrait-image {
     width: 175px;
     height: 175px;
-    top: 325px;
+    top: 220px;
     left: 65vw;
   }
 
@@ -626,7 +626,7 @@ a:hover {
   }
 
   .header__wrapper {
-    height: 450px;
+    height: 410px;
     background-image: linear-gradient(
         -45deg,
         rgba(255, 255, 255, 0.644) 0%,
@@ -637,23 +637,22 @@ a:hover {
   }
 
   .social-menu__wrapper {
-    height: 114px;
+    height: 105px;
   }
 
   .social-menu__list {
-    height: 131px;
-    margin-left: 71vw;
+    margin-left: 72vw;
     justify-content: flex-start;
   }
 
   .social-menu__link {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     margin: 15px;
   }
 
   .social-menu__icon {
-    height: 24px;
+    height: 21px;
   }
 
   .header__textbox {
@@ -663,7 +662,7 @@ a:hover {
 
   .header__paragraph {
     margin-top: 0;
-    font-size: 23px;
+    font-size: 21px;
   }
 
   .header__paragraph--bold {
@@ -671,17 +670,17 @@ a:hover {
   }
 
   .header__title {
-    font-size: 72px;
+    font-size: 68px;
   }
 
   .header__subtitle {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .header__portrait-image {
-    width: 225px;
-    height: 225px;
-    top: 255px;
+    width: 210px;
+    height: 210px;
+    top: 230px;
     left: 71vw;
   }
 
