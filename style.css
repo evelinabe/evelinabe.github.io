@@ -17,6 +17,7 @@ body {
 }
 
 h4,
+h5,
 p {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -285,6 +286,7 @@ a:hover {
 
 .project__text {
   width: 100%;
+  font-weight: 500;
 }
 
 .project__arrows {
@@ -292,6 +294,10 @@ a:hover {
   font-size: 17px;
   font-weight: 600;
   text-decoration: underline;
+}
+
+a:hover .project__arrows {
+  text-decoration-color: #000;
 }
 
 .codeboxes {
@@ -563,7 +569,7 @@ a:hover {
   }
 
   .project__wrapper {
-    max-width: 55vw;
+    width: 55vw;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
